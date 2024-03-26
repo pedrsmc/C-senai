@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SomaDeMatrizes {
+public class MultiplicacaoDeMatrizes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -35,16 +35,16 @@ public class SomaDeMatrizes {
             }
         }
 
-        // Somando as matrizes
+        // Multiplicando as matrizes
         for (int i = 0; i < colunas; i++) {
             for (int j = 0; j < linhas; j++) {
-                somaMatrizes[i][j] = matriz2[i][j] + matriz1[i][j];
+                somaMatrizes[i][j] = matriz2[i][j] * matriz1[i][j];
             }
         }
 
-        System.out.println("\nExibindo a soma das matrizes...");
+        System.out.println("\nResultado...");
 
-        // Imprimindo na tela a soma para o usuario
+        // Imprimindo na tela o resultado para o usuario
         for (int i = 0; i < linhas; i++) {
             System.out.println();
             for (int j = 0; j < colunas; j++) {
@@ -52,7 +52,7 @@ public class SomaDeMatrizes {
             }
         }
         System.out.println("\n");
-        
+
         sc.close();
     }
 }
