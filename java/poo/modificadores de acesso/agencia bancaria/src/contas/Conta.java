@@ -17,5 +17,18 @@ public class Conta {
     protected void exibirSaldo() {
         System.out.printf("Saldo: %.2f\n", this.saldo);
     }
+    
+    void sacar(double valor) {
+        saldo -= valor;
+    }
+    
+    void depositar(double valor) {
+        saldo += valor;
+    }
+    
+    void transferir(Conta destino, double valor) {
+        this.sacar(valor);
+        destino.depositar(valor);
+    }
 
 }

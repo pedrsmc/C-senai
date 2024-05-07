@@ -4,6 +4,8 @@ public class PessoaFisica {
     public static void main(String[] args) {
         Conta cc1 = new Conta("Leonardo", 1250);
         System.out.println("Cliente: " + cc1.cliente);
+        cc1.sacar(500);
+        cc1.depositar(300);
         cc1.exibirSaldo();
         
         System.out.println();

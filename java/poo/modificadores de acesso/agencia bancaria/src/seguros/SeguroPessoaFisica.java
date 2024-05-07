@@ -2,8 +2,7 @@ package seguros;
 
 import contas.Conta;
 
-public class SeguroPessoaFisica extends Conta{
-
+public class SeguroPessoaFisica extends Conta {
     public SeguroPessoaFisica(String nome, double saldo) {
         super(nome,saldo);
     }
